@@ -35,7 +35,6 @@ namespace TPGestionCommerciale
 
             db.Close();
 
-
             comboBoxVilles.DataSource = table;
             comboBoxVilles.DisplayMember = "Ville";
 

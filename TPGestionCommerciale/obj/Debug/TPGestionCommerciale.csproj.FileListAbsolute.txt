@@ -8,3 +8,4 @@ C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommercia
 C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.exe
 C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.pdb
 C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.FormClientsParVille.resources
+C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.FormMAJClients.resources

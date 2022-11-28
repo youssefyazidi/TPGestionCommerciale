@@ -59,6 +59,12 @@
     <Compile Include="FormClientsParVille.Designer.cs">
       <DependentUpon>FormClientsParVille.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMAJClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMAJClients.Designer.cs">
+      <DependentUpon>FormMAJClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -66,6 +72,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientsParVille.resx">
       <DependentUpon>FormClientsParVille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMAJClients.resx">
+      <DependentUpon>FormMAJClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
