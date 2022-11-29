@@ -41,8 +41,8 @@
             this.buttonQuitter = new System.Windows.Forms.Button();
             this.buttonRechrcher = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.textBoxCodeRecherche = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,16 +119,19 @@
             // 
             // buttonModifier
             // 
+            this.buttonModifier.Enabled = false;
             this.buttonModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModifier.Location = new System.Drawing.Point(407, 134);
+            this.buttonModifier.Location = new System.Drawing.Point(407, 130);
             this.buttonModifier.Name = "buttonModifier";
             this.buttonModifier.Size = new System.Drawing.Size(215, 30);
             this.buttonModifier.TabIndex = 8;
             this.buttonModifier.Text = "Modifier";
             this.buttonModifier.UseVisualStyleBackColor = true;
+            this.buttonModifier.Click += new System.EventHandler(this.buttonModifier_Click);
             // 
             // buttonSupprimer
             // 
+            this.buttonSupprimer.Enabled = false;
             this.buttonSupprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSupprimer.Location = new System.Drawing.Point(407, 181);
             this.buttonSupprimer.Name = "buttonSupprimer";
@@ -136,6 +139,7 @@
             this.buttonSupprimer.TabIndex = 9;
             this.buttonSupprimer.Text = "Supprimer";
             this.buttonSupprimer.UseVisualStyleBackColor = true;
+            this.buttonSupprimer.Click += new System.EventHandler(this.buttonSupprimer_Click);
             // 
             // buttonQuitter
             // 
@@ -146,6 +150,7 @@
             this.buttonQuitter.TabIndex = 10;
             this.buttonQuitter.Text = "Quitter";
             this.buttonQuitter.UseVisualStyleBackColor = true;
+            this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
             // 
             // buttonRechrcher
             // 
@@ -156,6 +161,7 @@
             this.buttonRechrcher.TabIndex = 11;
             this.buttonRechrcher.Text = "Rechercher";
             this.buttonRechrcher.UseVisualStyleBackColor = true;
+            this.buttonRechrcher.Click += new System.EventHandler(this.buttonRechrcher_Click);
             // 
             // groupBox1
             // 
@@ -170,6 +176,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Recherche";
             // 
+            // textBoxCodeRecherche
+            // 
+            this.textBoxCodeRecherche.Location = new System.Drawing.Point(142, 58);
+            this.textBoxCodeRecherche.Name = "textBoxCodeRecherche";
+            this.textBoxCodeRecherche.Size = new System.Drawing.Size(154, 22);
+            this.textBoxCodeRecherche.TabIndex = 13;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -179,13 +192,6 @@
             this.label5.Size = new System.Drawing.Size(96, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "Code Client :";
-            // 
-            // textBoxCodeRecherche
-            // 
-            this.textBoxCodeRecherche.Location = new System.Drawing.Point(142, 58);
-            this.textBoxCodeRecherche.Name = "textBoxCodeRecherche";
-            this.textBoxCodeRecherche.Size = new System.Drawing.Size(154, 22);
-            this.textBoxCodeRecherche.TabIndex = 13;
             // 
             // FormMAJClients
             // 
@@ -205,7 +211,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FormMAJClients";
             this.Text = "FormMAJClients";
             this.Load += new System.EventHandler(this.FormMAJClients_Load);
