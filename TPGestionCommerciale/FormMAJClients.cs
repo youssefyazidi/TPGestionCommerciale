@@ -14,7 +14,7 @@ namespace TPGestionCommerciale
 {
     public partial class FormMAJClients : Form
     {
-        List<Client> clients = new List<Client>();
+       List<Client> clients = new List<Client>();
         private DataAccess db;
         int position = 0;
         public FormMAJClients()
