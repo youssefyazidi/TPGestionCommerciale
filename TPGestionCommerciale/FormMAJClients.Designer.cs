@@ -43,6 +43,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxCodeRecherche = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.buttonPremier = new System.Windows.Forms.Button();
+            this.buttonPrecedent = new System.Windows.Forms.Button();
+            this.buttonSuivant = new System.Windows.Forms.Button();
+            this.buttonDernier = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,7 +148,7 @@
             // buttonQuitter
             // 
             this.buttonQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuitter.Location = new System.Drawing.Point(407, 271);
+            this.buttonQuitter.Location = new System.Drawing.Point(407, 352);
             this.buttonQuitter.Name = "buttonQuitter";
             this.buttonQuitter.Size = new System.Drawing.Size(215, 30);
             this.buttonQuitter.TabIndex = 10;
@@ -155,9 +159,9 @@
             // buttonRechrcher
             // 
             this.buttonRechrcher.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRechrcher.Location = new System.Drawing.Point(81, 21);
+            this.buttonRechrcher.Location = new System.Drawing.Point(132, 22);
             this.buttonRechrcher.Name = "buttonRechrcher";
-            this.buttonRechrcher.Size = new System.Drawing.Size(215, 30);
+            this.buttonRechrcher.Size = new System.Drawing.Size(136, 30);
             this.buttonRechrcher.TabIndex = 11;
             this.buttonRechrcher.Text = "Rechercher";
             this.buttonRechrcher.UseVisualStyleBackColor = true;
@@ -169,18 +173,18 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.buttonRechrcher);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(38, 271);
+            this.groupBox1.Location = new System.Drawing.Point(348, 224);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(344, 100);
+            this.groupBox1.Size = new System.Drawing.Size(274, 100);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Recherche";
             // 
             // textBoxCodeRecherche
             // 
-            this.textBoxCodeRecherche.Location = new System.Drawing.Point(142, 58);
+            this.textBoxCodeRecherche.Location = new System.Drawing.Point(132, 61);
             this.textBoxCodeRecherche.Name = "textBoxCodeRecherche";
-            this.textBoxCodeRecherche.Size = new System.Drawing.Size(154, 22);
+            this.textBoxCodeRecherche.Size = new System.Drawing.Size(136, 22);
             this.textBoxCodeRecherche.TabIndex = 13;
             // 
             // label5
@@ -193,11 +197,55 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Code Client :";
             // 
+            // buttonPremier
+            // 
+            this.buttonPremier.Location = new System.Drawing.Point(42, 271);
+            this.buttonPremier.Name = "buttonPremier";
+            this.buttonPremier.Size = new System.Drawing.Size(45, 33);
+            this.buttonPremier.TabIndex = 13;
+            this.buttonPremier.Text = "<";
+            this.buttonPremier.UseVisualStyleBackColor = true;
+            this.buttonPremier.Click += new System.EventHandler(this.buttonPremier_Click);
+            // 
+            // buttonPrecedent
+            // 
+            this.buttonPrecedent.Location = new System.Drawing.Point(103, 271);
+            this.buttonPrecedent.Name = "buttonPrecedent";
+            this.buttonPrecedent.Size = new System.Drawing.Size(45, 33);
+            this.buttonPrecedent.TabIndex = 14;
+            this.buttonPrecedent.Text = "<<";
+            this.buttonPrecedent.UseVisualStyleBackColor = true;
+            this.buttonPrecedent.Click += new System.EventHandler(this.buttonPrecedent_Click);
+            // 
+            // buttonSuivant
+            // 
+            this.buttonSuivant.Location = new System.Drawing.Point(170, 271);
+            this.buttonSuivant.Name = "buttonSuivant";
+            this.buttonSuivant.Size = new System.Drawing.Size(45, 33);
+            this.buttonSuivant.TabIndex = 15;
+            this.buttonSuivant.Text = ">>";
+            this.buttonSuivant.UseVisualStyleBackColor = true;
+            this.buttonSuivant.Click += new System.EventHandler(this.buttonSuivant_Click);
+            // 
+            // buttonDernier
+            // 
+            this.buttonDernier.Location = new System.Drawing.Point(245, 271);
+            this.buttonDernier.Name = "buttonDernier";
+            this.buttonDernier.Size = new System.Drawing.Size(45, 33);
+            this.buttonDernier.TabIndex = 16;
+            this.buttonDernier.Text = ">";
+            this.buttonDernier.UseVisualStyleBackColor = true;
+            this.buttonDernier.Click += new System.EventHandler(this.buttonDernier_Click);
+            // 
             // FormMAJClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 408);
+            this.ClientSize = new System.Drawing.Size(657, 413);
+            this.Controls.Add(this.buttonDernier);
+            this.Controls.Add(this.buttonSuivant);
+            this.Controls.Add(this.buttonPrecedent);
+            this.Controls.Add(this.buttonPremier);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonQuitter);
             this.Controls.Add(this.buttonSupprimer);
@@ -239,5 +287,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBoxCodeRecherche;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonPremier;
+        private System.Windows.Forms.Button buttonPrecedent;
+        private System.Windows.Forms.Button buttonSuivant;
+        private System.Windows.Forms.Button buttonDernier;
     }
 }

@@ -14,7 +14,9 @@ namespace TPGestionCommerciale
 {
     public partial class FormMAJClients : Form
     {
+        List<Client> clients = new List<Client>();
         private DataAccess db;
+        int position = 0;
         public FormMAJClients()
         {
             InitializeComponent();
@@ -23,6 +25,29 @@ namespace TPGestionCommerciale
         private void FormMAJClients_Load(object sender, EventArgs e)
         {
             db = new DataAccess();
+
+            //Remplir la liste des clients
+            //réaliser la recherche
+            string query = "SELECT * FROM CLIENT";
+
+            db.Open();
+            SqlDataReader reader = db.executeSELECT(query);
+            while (reader.Read())
+            {
+                clients.Add(new Client()
+                {
+                    CodeCl= (string)reader[0],
+                    Nom = (string)reader[1],
+                    Ville = (string)reader[2]
+                }); 
+        
+            }
+            reader.Close();
+            db.Close();
+
+
+            //afficher le client position
+            afficherClient();
         }
 
         private void buttonAjouter_Click(object sender, EventArgs e)
@@ -141,6 +166,42 @@ namespace TPGestionCommerciale
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void afficherClient()
+        {
+            textBoxCode.Text = clients[position].CodeCl;
+            textBoxNom.Text = clients[position].Nom;
+            textBoxVille.Text = clients[position].Ville;
+        }
+
+        private void buttonPremier_Click(object sender, EventArgs e)
+        {
+            position = 0;
+            afficherClient();
+
+        }
+
+        private void buttonPrecedent_Click(object sender, EventArgs e)
+        {
+            if(position > 0)
+            position--;
+            afficherClient();
+        }
+
+        private void buttonSuivant_Click(object sender, EventArgs e)
+        {
+            if(position < clients.Count-1)
+            position++;
+            afficherClient();
+        }
+
+        private void buttonDernier_Click(object sender, EventArgs e)
+        {
+            position = clients.Count - 1;
+            afficherClient();
+
+
         }
     }
 }
