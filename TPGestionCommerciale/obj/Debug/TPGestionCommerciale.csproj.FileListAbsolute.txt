@@ -10,3 +10,4 @@ C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommercia
 C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.FormClientsParVille.resources
 C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.FormMAJClients.resources
 C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.FormMAJClientV2.resources
+C:\Users\YAZIDI\Desktop\Projets CDS 2022\TPGestionCommerciale\TPGestionCommerciale\obj\Debug\TPGestionCommerciale.FormMAJArticles.resources

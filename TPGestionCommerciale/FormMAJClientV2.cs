@@ -18,6 +18,7 @@ namespace TPGestionCommerciale
 
         //Liaison de données
         BindingSource binding = new BindingSource();
+
         public FormMAJClientV2()
         {
             InitializeComponent();
@@ -41,9 +42,12 @@ namespace TPGestionCommerciale
             //Initialiser la liaison de données
             //les données
             binding.DataSource = table;
+
             //les champs (interface)
             textBoxCode.DataBindings.Add("Text", binding, "CodeCL");
+
             textBoxNom.DataBindings.Add("Text", binding, "Nom");
+
             textBoxVille.DataBindings.Add("Text", binding, "Ville");
 
         }
@@ -51,6 +55,7 @@ namespace TPGestionCommerciale
         private void buttonPremier_Click(object sender, EventArgs e)
         {
             binding.MoveFirst();
+       
         }
 
         private void buttonPrecedent_Click(object sender, EventArgs e)
