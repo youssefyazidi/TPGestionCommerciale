@@ -60,6 +60,12 @@
     <Compile Include="FormClientsParVille.Designer.cs">
       <DependentUpon>FormClientsParVille.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCommande.Designer.cs">
+      <DependentUpon>FormCommande.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMAJArticles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientsParVille.resx">
       <DependentUpon>FormClientsParVille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCommande.resx">
+      <DependentUpon>FormCommande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMAJArticles.resx">
       <DependentUpon>FormMAJArticles.cs</DependentUpon>

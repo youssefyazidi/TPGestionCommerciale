@@ -16,7 +16,7 @@ namespace TPGestionCommerciale
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMAJArticles());
+            Application.Run(new FormCommande());
         }
     }
 }

@@ -44,6 +44,18 @@ namespace TPGestionCommerciale.Data
             //il faut consommer le resultat 
             return reader;
         }
+
+        //Executer les SELECT avec une seule valeur resultat
+        public object executeScalar(string codeSQL)
+        {
+            commande.CommandText = codeSQL;
+
+            object value = commande.ExecuteScalar();
+            //avant de fermer la connexion 
+            //il faut consommer le resultat 
+            return value;
+        }
+
         //Ouvrir la connexion
         public void Open()
         {
